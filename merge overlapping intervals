@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Arrays;
 class Solution {
-    public int[][] merge(int[][] intervals) {
+    public static int[][] merge(int[][] intervals) {
     
         Arrays.sort(intervals, (int[] a, int[] b) -> a[0] - b[0]);
         int rows = intervals.length;
@@ -29,4 +29,12 @@ class Solution {
     }
 
         
-    }
+    
+public static void main(String args[])  //static method  
+{ 
+int[][] arr = { { 1, 4 }, { 4, 5 } };
+
+System.out.println(Arrays.deepToString(merge(arr))); 
+
+}
+}
